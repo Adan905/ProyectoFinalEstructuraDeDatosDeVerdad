@@ -1,0 +1,31 @@
+﻿<Window x:Class="ProyectoED.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoED"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView Name="lstCosas" HorizontalAlignment="Left" Height="315" Margin="10,10,0,0" VerticalAlignment="Top" Width="250" SelectionChanged="LstCosas_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Título" Width="140"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Año}" Header="Año" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid Name="grdInfo" HorizontalAlignment="Left" Height="270" Margin="265,55,0,0" VerticalAlignment="Top" Width="517"/>
+        <Button Name="btAgregarelemento" Content="Agregar elemento" HorizontalAlignment="Left" Margin="265,30,0,0" VerticalAlignment="Top" Width="105" Click="btAgregarelemento_Click"/>
+        <Button Name="btAZ" Content="A / Z" HorizontalAlignment="Left" Margin="50,330,0,0" VerticalAlignment="Top" Width="75" Click="btAZ_Click"/>
+        <Button Name="btZA" Content="Z / A" HorizontalAlignment="Left" Margin="50,355,0,0" VerticalAlignment="Top" Width="75" Click="BtZA_Click"/>
+        <Button Name="btMayomeno" Content="+ / -" HorizontalAlignment="Left" Margin="130,330,0,0" VerticalAlignment="Top" Width="75" Click="BtMayomeno_Click"/>
+        <Button Name="btmenoMayo" Content="- / +" HorizontalAlignment="Left" Margin="130,355,0,0" VerticalAlignment="Top" Width="75" Click="BtmenoMayo_Click"/>
+        <Button Name="btGuardarelemento" Content="Guardar elemento" HorizontalAlignment="Left" Margin="265,330,0,0" VerticalAlignment="Top" Width="105" Click="BtGuardarelemento_Click" />
+        <Button Name="btCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="375,330,0,0" VerticalAlignment="Top" Width="75" Click="BtCancelar_Click"/>
+        <Button Name="btActualizar" Content="Actualizar elemento" HorizontalAlignment="Left" Margin="455,330,0,0" VerticalAlignment="Top" Width="115" Click="BtActualizar_Click"/>
+        <Button Name="btEditarelemento" Content="Editar elemento" HorizontalAlignment="Left" Margin="575,330,0,0" VerticalAlignment="Top" Width="93" Click="BtEditarelemento_Click"/>
+        <Button Name="btEliminarelemento" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="673,330,0,0" VerticalAlignment="Top" Width="105" Click="BtEliminarelemento_Click"/>
+
+    </Grid>
+</Window>
