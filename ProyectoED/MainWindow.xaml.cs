@@ -28,6 +28,8 @@ namespace ProyectoED
             InitializeComponent();
             conjunto.Add(new Serie("Shigatsu no kimi no uso", 2016, "JapAnime", "Suspenso", 2, "Dos chicos que tocan instrumentos se conocen", 5));
             conjunto.Add(new Pelicula("John Wick", 2013, "No sé la verdad", "Acción", "Un hombre que dedicaba al asesinato a sueldo.", 4));
+            conjunto.Add(new Pelicula("Frozen", 2014, "Disney", "Animación", "Una princesa hace magia", 4));
+            conjunto.Add(new Serie("Breaking Bad", 2008, "Sony", "Thriller", 6, "Dos hombres hacen cosas ilegales pero no son malos.", 5));
             lstCosas.ItemsSource = conjunto;
 
             btAgregarelemento.Visibility = Visibility.Visible;
